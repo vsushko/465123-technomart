@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Vasiliy Sushko](https://up.htmlacademy.ru/htmlcss/23/user/465123).
-* Наставник: `Неизвестно`.
+* Наставник: [Кирилл Петров](https://htmlacademy.ru/profile/frozik).
 
 ---
 
