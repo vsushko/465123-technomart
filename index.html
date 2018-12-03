@@ -16,22 +16,26 @@
         Поиск:
         <input type="text" name="search"><br>
       </div>
-      <div class="bookmark">
-        <a class="icon" href="#">Закладки:</a>
-        <span class="counter">0</span>
-      </div>
-      <div class="cart">
-        <a class="icon" href="#">Корзина:</a>
-        <span class="counter">0</span>
+      <div class="user-orders">
+        <ul class="user-orders-list">
+          <li class="user-orders-list-item bookmarks">
+            <span class="title">Закладки:</span>
+            <span class="counter">0</span>
+          </li>
+          <li class="user-orders-list-item cart">
+            <span class="title">Корзина:</span>
+            <span class="counter">0</span>
+          </li>
+        </ul>
       </div>
       <div class="make-order">
         <a class="icon" href="#">Оформить заказ</a>
       </div>
     </div>
-    <div class="user-authorization">
+    <div class="additional-info">
       <p>Интернет-магазин  строительных материалов  и инструментов для ремонта</p>
       <div class="contact-info">
-        <p>+7 (812) 555-05-55</p>
+        <a href="tel:7-812-555-0555">+7 (812) 555-05-55</a>
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       </div>
       <div class="authorization">
@@ -41,18 +45,16 @@
         </ul>
       </div>
     </div>
-    <div class="main-navigation">
-      <nav class="main-navigator">
-        <ul class="site-navigation">
-          <li><a href="main.html">Главная</a></li>
-          <li><a href="company.html">Компания</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="news.html">Новости</a></li>
-          <li><a href="special-offers.html">Спецпредложения</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-      </nav>
-    </div>
+    <nav class="main-navigation">
+      <ul>
+        <li><a href="main.html">Главная</a></li>
+        <li><a href="company.html">Компания</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="news.html">Новости</a></li>
+        <li><a href="special-offers.html">Спецпредложения</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+    </nav>
   </header>
   <main>
     <section class="about-us">
@@ -78,30 +80,35 @@
         <p>Вы можете забрать товар сами,<br>
           заехав в наш офис:
         </p>
-        <img src="img/map.svg" width="300" height="158" alt="Карта">
+        <img src="img/map.jpeg" width="300" height="158" alt="Карта">
         <a class="button" href="#">Заблудились? Напишите нам!</a>
       </div>
     </section>
   </main>
   <footer>
-    <section class="footer-nav">
+    <section class="footer-main-nav">
       <h2 class="visually-hidden">Навигация</h2>
       <a class="logo">
         <img src="img/index-logo.svg" width="220" height="47" alt="Логотип Техномарт">
       </a>
-      <p>
-        г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
-        +7 (812) 555-05-55 
-      </p>
-      <nav class="footer-navigator">
-        <ul class="main-navigation">
+      <nav class="main-navigation">
+        <ul>
           <li><a href="company.html">Компания</a></li>
           <li><a href="news.html">Новости</a></li>
           <li><a href="catalog.html">Каталог</a></li>
           <li><a href="shipment.html">Доставка</a></li>
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
-        <ul class="additional-navigation">
+      </nav>
+    </section>
+    <section class="footer-add-nav">
+      <h2 class="visually-hidden">Контактная информация</h2>
+      <p>
+        г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
+        +7 (812) 555-05-55 
+      </p>
+      <nav class="additional-navigation">
+        <ul>
           <li><a href="materials.html">Материалы</a></li>
           <li><a href="equipment.html">Техника</a></li>
           <li><a href="instrument.html">Инструмент</a></li>
@@ -111,9 +118,11 @@
     </section>
     <section>
       <h2 class="visually-hidden">Напишите нам</h2>
-      <p>© 2010–2017 Компания «Техномарт» <br>
-        Все права защищены
-      </p>
+      <div class="copyright">
+        <span>© 2010–2017 Компания «Техномарт» <br>
+          Все права защищены
+        </span>
+      </div>
       <div class="social-contacts-container">
         <ul class="social-contacts-list">
           <li class="social-contact-item"><a href="#" class="social-button-vk"></a></li>
